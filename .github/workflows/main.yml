@@ -25,7 +25,7 @@ jobs:
      with:
       name: mybuild
       path: dist
-deployJob:
+ deployJob:
   needs: build-job
   runs-on: ubuntu-latest
   steps:
