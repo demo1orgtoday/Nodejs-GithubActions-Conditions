@@ -18,3 +18,5 @@ jobs:
      with:
        name: mytestreport
        path: test.json
+   - name: Build the code 
+     run: npm run build 
