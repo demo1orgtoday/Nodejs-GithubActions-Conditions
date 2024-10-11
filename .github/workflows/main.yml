@@ -1,4 +1,4 @@
-name: Test the code and fetch the test report
+name: Build the code
 on:
  push:
   branches:
@@ -13,3 +13,8 @@ jobs:
      run: npm ci
    - name: Test the code
      run: npm run test
+   - name: Upload the test report on github 
+     uses: actions/upload-artifact@v4
+     with:
+       name: mytestreport
+       path: test.json
