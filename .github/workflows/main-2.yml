@@ -1,4 +1,4 @@
-name: Continuous Integration for Nodejs source code
+name: editContinuous Integration for Nodejs source code
 on: 
    push:
     branches: 
